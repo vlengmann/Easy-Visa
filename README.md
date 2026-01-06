@@ -25,7 +25,7 @@ This project was completed June 2024 and re-exported for documentation, deployme
 * `full_time_position`: Is the position of work full-time? Y = Full Time Position; N = Part Time Position
 * `case_status`:  Flag indicating if the Visa was certified or denied
 
-* 
+  
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
