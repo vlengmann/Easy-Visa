@@ -25,6 +25,7 @@ importance_df = pd.DataFrame({
 # Initialize the Dash app with Bootstrap theme
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "Easy Visa Prediction"
+# Deployment trigger
 
 # App layout
 app.layout = dbc.Container([
