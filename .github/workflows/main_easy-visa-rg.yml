@@ -26,22 +26,20 @@ jobs:
 
       # 🛠️ Local Build Section (Optional)
       # The following section in your workflow is designed to catch build issues early on the client side, before deployment. This can be helpful for debugging and validation. However, if this step significantly increases deployment time and early detection is not critical for your workflow, you may remove this section to streamline the deployment process.
-      - name: Prepare deployment package
+      - name: Create and Start virtual environment and Install dependencies
         run: |
-          mkdir -p deployment
-          cp -r Easy-Visa/* deployment/
-          rm -rf deployment/antenv deployment/notebooks deployment/test_model.py deployment/genv deployment/__pycache__
-          cd deployment
           python -m venv antenv
           source antenv/bin/activate
           pip install -r requirements.txt
-
-      # By default, when you enable GitHub CI/CD integration through the Azure portal, the platform automatically sets the SCM_DO_BUILD_DURING_DEPLOYMENT application setting to true. This triggers the use of Oryx, a build engine that handles application compilation and dependency installation (e.g., pip install) directly on the platform during deployment. Hence, we exclude the antenv virtual environment directory from the deployment artifact to reduce the payload size.
+                
+      # By default, when you enable GitHub CI/CD integration through the Azure portal, the platform automatically sets the SCM_DO_BUILD_DURING_DEPLOYMENT application setting to true. This triggers the use of Oryx, a build engine that handles application compilation and dependency installation (e.g., pip install) directly on the platform during deployment. Hence, we exclude the antenv virtual environment directory from the deployment artifact to reduce the payload size. 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: deployment/
+          path: |
+            .
+            !antenv/
 
       # 🚫 Opting Out of Oryx Build
       # If you prefer to disable the Oryx build process during deployment, follow these steps:
@@ -65,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CFA1FA3915CB43BCB8106FEDFFBFC906 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C8A7395FA0B145B39B79302FB89144FE }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1AF7B0B6F55644868F986D393FB0B8D1 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2707B8BBE1B44CE0866161A2736C8CF6 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_42CE59C0D9554876918A68336638A605 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_218741257C5C4CA0BE730295A6DA140B }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
