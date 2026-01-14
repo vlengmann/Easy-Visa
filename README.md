@@ -70,19 +70,34 @@ Easy-Visa/
         └── main_easy-visa-rg.yml # GitHub Actions deployment workflow
 ```
 ## Methods & Analysis 
-visualize confusuion matrix 
-Accuracy, recall, precsion, F1
-Hyperparameter tuned models
-Decision Tree, Bagging (grid search cv), bagging estimator
-random forest (grid search cv)
 
-Gradient Boost(ADA Boost, decion tree grid search cv)
-Feature importance found using normalizedGini imprtance
+Five ensemble machine learning methods were trained and compared followed by hyperparameter tuning and optimization:
+1. Decision Tree Classifier with Bagging 
+3. Random Forest Classifier
+5. Gradient Boosting Classifier
+6. AdaBoost Classifier
+7. **XG Boost Classifier**
 
-ADA (grid search cv)
-XGB (grid search cv)
+<u>Hyperparameter Optimization</u>  
 
-Model Performance Comparison
+Grid Search Cross Validation was applied to all models to:
+- Prevent overfitting
+- Ensure robust performance across data splits
+- Optimize the F1 score for balanced precision/ recall
+
+<u>Evaluation Metrics</u>  
+
+Model performance was evaluated by:  
+- Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+<u>Feature Importance</u>  
+
+Normalized Gini Importance was calculated for all features to identify the most influential drivers to approvals
+
 
 
 ## App Features
@@ -96,10 +111,10 @@ Model Performance Comparison
 - **Automated Deployment** - GitHub Actions pipeline for continuous delivery
 ## Model Visualization and Deployment
 
-- Clear prediction results with displayed accuracy
-- Professional interface with input capabilities
-- Feature importance mapping
-- Deployment through Azure for reproducability
+- ![Clear prediction results with displayed accuracy](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Prediction%20Results%20and%20Accuracy.png)
+- ![Professional interface with input capabilities](https://github.com/vlengmann/Easy-Visa/blob/ec05d0ae925353c9fc66c9265675539a931f2a8e/UI%20Interface.png)
+- ![Feature importance mapping](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Feature%20Importance%20Analysis.png)
+- ![Deployment through Azure for reproducability](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Azure%20Deployment.png)
 ## Installation and Setup
 
 
