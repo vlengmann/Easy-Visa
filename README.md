@@ -78,14 +78,14 @@ Five ensemble machine learning methods were trained and compared followed by hyp
 6. AdaBoost Classifier
 7. **XG Boost Classifier**
 
-<u>Hyperparameter Optimization</u>  
+#### Hyperparameter Optimization 
 
 Grid Search Cross Validation was applied to all models to:
 - Prevent overfitting
 - Ensure robust performance across data splits
 - Optimize the F1 score for balanced precision/ recall
 
-<u>Evaluation Metrics</u>  
+#### Evaluation Metrics  
 
 Model performance was evaluated by:  
 - Confusion Matrix
@@ -94,7 +94,7 @@ Model performance was evaluated by:
 - Recall
 - F1 Score
 
-<u>Feature Importance</u>  
+#### Feature Importance  
 
 Normalized Gini Importance was calculated for all features to identify the most influential drivers to approvals
 
