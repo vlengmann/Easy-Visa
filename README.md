@@ -111,10 +111,18 @@ Normalized Gini Importance was calculated for all features to identify the most 
 - **Automated Deployment** - GitHub Actions pipeline for continuous delivery
 ## Model Visualization and Deployment
 
-- ![Clear prediction results with displayed accuracy](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Prediction%20Results%20and%20Accuracy.png)
-- ![Professional interface with input capabilities](https://github.com/vlengmann/Easy-Visa/blob/ec05d0ae925353c9fc66c9265675539a931f2a8e/UI%20Interface.png)
-- ![Feature importance mapping](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Feature%20Importance%20Analysis.png)
-- ![Deployment through Azure for reproducability](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Azure%20Deployment.png)
+- Clear prediction results with displayed accuracy  
+  ![Clear prediction results with displayed accuracy](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Prediction%20Results%20and%20Accuracy.png)
+
+- Professional interface with input capabilities  
+  ![Professional interface with input capabilities](https://github.com/vlengmann/Easy-Visa/blob/ec05d0ae925353c9fc66c9265675539a931f2a8e/UI%20Interface.png)
+
+- Feature importance mapping  
+  ![Feature importance mapping](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Feature%20Importance%20Analysis.png)
+
+- Deployment through Azure for reproducibility  
+  ![Deployment through Azure for reproducibility](https://github.com/vlengmann/Easy-Visa/blob/ad9d31bf9166c4a261153d2399fdcd68b96d0bda/Azure%20Deployment.png)
+
 ## Installation and Setup
 
 
